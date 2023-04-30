@@ -12,11 +12,7 @@ export const TransactionBody = ({ type, amount, currency }) => {
   );
 };
 TransactionBody.propTypes = {
-  transaction: PropTypes.arrayOf(
-    PropTypes.exact({
-      type: PropTypes.string.isRequired,
-      amount: PropTypes.string.isRequired,
-      currency: PropTypes.string.isRequired,
-    })
-  ),
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
 };
